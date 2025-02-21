@@ -1,0 +1,125 @@
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+* { margin: 0; padding: 0; }
+li { list-style: none; }
+a { text-decoration: none; color: inherit; }
+img { vertical-align: top; }
+
+.wrap { width: 1200px; margin: 0 auto; position: relative; }
+body { font-size: 16px; font-family: 'NanumSquare'; }
+.wrap:after, ul:after, .cl:after { content: ""; clear: both; display: block; }
+.blind { font-size: 0; overflow: hidden; left: 9999px; width: 0; height: 0; }
+
+header { background: #fff; height: 70px; box-shadow: 2px 2px 10px rgba(0,0,0,0.3); position: fixed; width: 100%; z-index: 99; }
+header h1 { padding-top: 15px; }
+header h1 a img { height: 40px; }
+
+header .gnb { position: absolute; left: 210px; top: 22px; }
+header .gnb li { float:left; font-size: 16px; margin: 0 50px; font-weight: bold; line-height: 1.6; }
+header .gnb li a { transition: 0.2s; }
+header .gnb li a:hover, header .gnb li a:focus { color: rgb(59, 129, 235); }
+
+header .snb { position: absolute; right: 0; top: 28px; }
+header .snb li { float: left; font-size: 12px; color: #666; }
+header .snb li:after { content: "|"; margin: 0 10px; }
+header .snb li:last-child:after { display: none; }
+header .snb li a { transition: 0.2s; }
+header .snb li a:hover, header .snb li a:focus { color: #000; }
+
+.blank { height: 70px; }
+
+#main { background: #f3f2f0; }
+#main .bn article { color: #fff; position: absolute; left: 60px; top: 60px; }
+#main .bn article h3 { font-size: 30px; font-weight: 900; }
+#main .bn article p { margin-top: 16px; line-height: 1.4; }
+#main .bn article a { display: block; width: 190px;  border: 1px solid #fff; line-height: 40px; text-align: center; font-size: 14px; font-weight: bold; margin-top: 40px; transition: 0.3s; }
+#main .bn article a:hover, #main article a:focus { background: #fff; color: #000; border-radius: 50px; }
+#main .bn article a i { margin-left: 10px; position: relative; top: 1px; }
+
+#main .bn ul { display: flex; justify-content: center; width: 100%; position: absolute; bottom: 30px; }
+#main .bn ul li { margin: 0 5px; }
+#main .bn ul li a { width: 12px; height: 12px; border-radius: 12px; background: #fff; display: block; text-indent: 30px; overflow: hidden; }
+#main .bn ul li.select a { background: #000; }
+
+#main .bn >a { position: absolute; top: calc(50% - 12px); }
+#main .bn .prev { left: -30px; }
+#main .bn .next { right: -30px; }
+
+#main .link { margin-top: 40px; }
+#main .link ul li { float: left; width: 299px; line-height: 100px; background: #fff; margin-right: 1px; box-sizing: border-box; }
+#main .link ul li:last-child { margin-right: 0; width: 300px; }
+#main .link ul li a { padding-left: 40px; font-size: 16px; font-weight: bold; display: block; }
+#main .link ul li:nth-child(1) { background: #fff url(../images/icon1.png) no-repeat right 30px center; }
+/* 배경색 배경이미지 반복여부 위치:디폴트 left top 사이즈 고정여부 */
+#main .link ul li:nth-child(2) { background: #fff url(../images/icon2.png) no-repeat right 30px center; }
+#main .link ul li:nth-child(3) { background: #fff url(../images/icon3.png) no-repeat right 30px center; }
+#main .link ul li:nth-child(4) { background: #fff url(../images/icon4.png) no-repeat right 30px center; }
+
+#event { background: #e9e5e4; padding: 40px 0; }
+#event ul li { float: left; }
+#event ul li p { background: #fff; padding: 15px 20px; font-size: 14px; font-weight: bold; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+#event .wrap>a { position: absolute; top: calc(50% - 36px); }
+#event .prev { left: -30px; }
+#event .next { right: -30px; }
+#event ul li figure { overflow: hidden; }
+#event ul li img { transition: 0.3s; }
+#event ul li img:hover { transform: scale(1.03); }
+
+#dp { background: #f2efec; padding-top: 80px; }
+#dp .wrap>img { width: 800px; }
+#dp article { width: 400px; float: left; padding: 50px 40px 0 40px; box-sizing: border-box; }
+#dp article h3 { font-size: 36px; font-weight: 900; }
+#dp article p { font-size: 16px; margin-top: 30px; }
+#dp article a { display: block; width: 190px;  border: 1px solid #000; line-height: 40px; text-align: center; font-size: 14px; font-weight: bold; margin-top: 30px; transition: 0.3s; }
+#dp article a:hover, #dp article a:focus { background: #000; color: #fff; border-radius: 50px; }
+#dp article a i { margin-left: 10px; position: relative; top: 1px; }
+
+#dp ul { display: flex; width: 100%; justify-content: center; position: absolute; bottom: 30px; }
+#dp ul li { margin: 0 5px; }
+#dp ul li a { width: 12px; height: 12px; border-radius: 12px; display: block; background: #fff; text-indent: 30px; overflow: hidden; }
+#dp ul li.select a { background: #000; }
+
+#dp .wrap>a { position: absolute; top: calc(50% - 12px); }
+#dp .prev { left: -30px; }
+#dp .next { right: -30px; }
+
+#center { background: #e9e5e4; }
+#center h3 { font-size: 30px; line-height: 120px; font-weight: bold; }
+#center ul li { float: left;}
+#center ul li a { font-size: 16px; color: #fff; text-transform: uppercase; font-weight: 900; display: block; width: 300px; height: 300px; display: flex; justify-content: center; align-items: center; }
+#center ul li:nth-child(1) a { background: #fff url(../images/main_drv1.jpg) no-repeat center; }
+#center ul li:nth-child(2) a { background: #fff url(../images/main_drv2.jpg) no-repeat center; }
+#center ul li:nth-child(3) a { background: #fff url(../images/main_drv3.jpg) no-repeat center; }
+#center ul li:nth-child(4) a { background: #fff url(../images/main_drv4.jpg) no-repeat center; }
+#center ul li a p { text-align: center; line-height: 1.4; }
+
+#fm { padding: 80px 0 20px 0; }
+#fm ul li { float: left; margin-right: 30px; }
+#fm ul li:last-child { margin-right: 0; }
+#fm ul li a { font-size: 14px; font-weight: bold; line-height: 60px; }
+#fm ul li a p { padding: 0 6px; }
+#fm ul li figure { overflow: hidden; }
+#fm ul li a img { transition: 0.3s; }
+#fm ul li a img:hover { transform: scale(1.03); }
+
+#fm .wrap >a { width: 40px; height: 40px; display: block; background: rgba(225,225,225,0.9); text-align: center; position: absolute; top: calc(50% - 50px); }
+#fm .wrap .next { right: 0; }
+#fm .wrap>a img { height: 16px; margin-top: 12px; }
+
+footer { background: #252525; color: #ccc; font-size: 12px; padding-top: 50px; }
+footer .info .ft li { float: left; line-height: 1; } /* 글자가 뭐는 위에 있고 뭐는 아래에 떨어져있고 하면 line-height 줘서 맞추기 시작점이 다 다른 것 같음  */
+footer .info .ft li:after { content: "|"; margin: 0 20px; }
+footer .info .ft li:last-child:after { display: none; }
+footer .info .ft li i { font-style: normal; font-size:8px; color: #999; margin-left: 5px; }
+
+footer address { font-style: normal; margin-top: 20px; }
+footer address span { margin-right: 50px; line-height: 1.8; }
+footer address span:last-child { display: block; margin-right: 0; } /* 줄바꿈이 애매하기 때문에 마지막만 블록으로 바꿔줘서 아랫줄로 떨어뜨림 */
+
+footer .sns { position: absolute; right: 0; bottom: 5px; }
+footer .sns li { float: left; margin-left: 20px; }
+footer .sns li img { height: 20px; } /* 사진의 너비가 다르고 높이로 정렬되어있는 경우에는 사진 크기를 너비가 아니라 높이로 맞춰줘야함 */
+
+footer .bg { background: #1c1b1b; margin-top: 40px; line-height: 60px; }
+footer .bg .wrap img { height: 23px; padding-top: 18px; }
+footer .bg .wrap p { position: absolute; right: 0; top: 0; }
