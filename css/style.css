@@ -85,13 +85,16 @@ header .snb li a:hover, header .snb li a:focus { color: #000; }
 
 #center { background: #e9e5e4; }
 #center h3 { font-size: 30px; line-height: 120px; font-weight: bold; }
+#center ul { background: #000; }
 #center ul li { float: left;}
-#center ul li a { font-size: 16px; color: #fff; text-transform: uppercase; font-weight: 900; display: block; width: 300px; height: 300px; display: flex; justify-content: center; align-items: center; }
-#center ul li:nth-child(1) a { background: #fff url(../images/main_drv1.jpg) no-repeat center; }
-#center ul li:nth-child(2) a { background: #fff url(../images/main_drv2.jpg) no-repeat center; }
-#center ul li:nth-child(3) a { background: #fff url(../images/main_drv3.jpg) no-repeat center; }
-#center ul li:nth-child(4) a { background: #fff url(../images/main_drv4.jpg) no-repeat center; }
-#center ul li a p { text-align: center; line-height: 1.4; }
+#center ul li a { font-size: 16px; color: #fff; text-transform: uppercase; font-weight: 900; display: block; width: 300px; height: 300px; display: flex; justify-content: center; align-items: center; transition: 0.3s; }
+#center ul li:nth-child(1) a { background: #fff url(../images/main_drv1.jpg) no-repeat center; opacity: 0.6; }
+#center ul li:nth-child(2) a { background: #fff url(../images/main_drv2.jpg) no-repeat center; opacity: 0.6; }
+#center ul li:nth-child(3) a { background: #fff url(../images/main_drv3.jpg) no-repeat center; opacity: 0.6; }
+#center ul li:nth-child(4) a { background: #fff url(../images/main_drv4.jpg) no-repeat center; opacity: 0.6; }
+#center ul li a:hover, #center ul li a:focus { opacity: 1; }
+#center ul li a p { text-align: center; line-height: 1.4; opacity: 0; transition: 0.3s; }
+#center ul li a:hover p, #center ul li a:focus p { opacity: 1; }
 
 #fm { padding: 80px 0 20px 0; }
 #fm ul li { float: left; margin-right: 30px; }
